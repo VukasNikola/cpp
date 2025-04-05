@@ -7,6 +7,8 @@
 Compiler directive starts with #, tells compiler operations to do on the source code, here we want the compiler to include the code of the header file iostream. This header file is a library that contains objects and functions to help with reading and writing...
 
 In C++ every line of executable code must be part of a function!!!
+
+ The main function is where execution begins and typically includes calls to other functions.
 */
 
 int main(){
