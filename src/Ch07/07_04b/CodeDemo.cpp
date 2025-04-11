@@ -10,19 +10,19 @@
 class Inventory{
 public:
     // Default Constructor
-    Inventory(){
-        capacity = 10;
+    Inventory(): capacity(10){ //constructor doesn't have a return type.
+        
         items = new std::vector<std::string>();
     }
 
     // Overloaded Constructor
-    Inventory(int capacity){
-        this->capacity = capacity;
+    Inventory(int capacity_i): capacity(capacity_i){
+        // this->capacity = capacity;//this is a pointer which refers to this object. this -> capacity means the member variable capacity
         items = new std::vector<std::string>();
     }
 
     // Destructor
-    ~Inventory(){
+    ~Inventory(){ //no overloads. "~"
         delete items; // Prevent memory leak by deallocating the dynamic vector
     }
 

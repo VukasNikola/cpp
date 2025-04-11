@@ -4,19 +4,19 @@
 
 #include <iostream>
 #include <string>
-#include <chrono>
+#include <chrono>//contains classes to keep time
 
 // Type aliases for chrono classes
 using Clock = std::chrono::system_clock;
-using TimePoint = std::chrono::time_point<Clock>;
+using TimePoint = std::chrono::time_point<Clock>; // clock class between angle brackets. <> is there because TimePoint and Duration are templates
 using Duration = std::chrono::duration<double>;
 
 int main(){
-    TimePoint start, end;
-    Duration elapsed_seconds;
+    TimePoint start, end; // declaring 2 objects of TimePoint class
+    Duration elapsed_seconds; //duration object
     std::string input;
 
-    start = Clock::now();
+    start = Clock::now();//now function form the Clock
 
     std::cout << "Type 'start' as quickly as you can and hit ENTER: " << std::flush;
     std::cin >> input;

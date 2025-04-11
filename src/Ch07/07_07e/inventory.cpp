@@ -1,5 +1,5 @@
 #include "inventory.h"
-
+//Have to use the name of the class and then the ::. 
 // Default Constructor
 Inventory::Inventory(): capacity(10){
     items = new std::vector<std::string>();
